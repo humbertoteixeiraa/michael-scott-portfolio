@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #c0c0b8;
+
+    border: 5px solid red;
+}
+
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+section {
+    border: 5px solid yellow;
+}
+
+footer {
+    border: 5px solid blueviolet;
+}
