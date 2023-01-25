@@ -62,9 +62,9 @@ header .menu-line {
 .container .rightside {
     flex: 1;
 
-    background-image: url("../images/michael-01.jpg");
-    background-size: 100% auto;
-    background-position: center bottom;
+    background-image: url("../images/michael-890x890.jpg");
+    background-size: cover;
+    background-position: center top;
 }
 
 .container .info {
@@ -132,4 +132,56 @@ footer a {
 
 footer a:hover {
     opacity: 0.8;
+}
+
+
+/*
+RESPONSIVIDADE
+*/
+
+
+@media (max-width: 850px) {
+    header {
+        position: initial;
+        background-color: #2f2e29;
+    }
+
+    header .menu-line {
+        background-color: #fff;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .leftside {
+        flex: none;
+        justify-content: center;
+        text-align: center;
+
+        padding: 30px 30px;
+    }
+
+    footer {
+        position: initial;
+
+        background-color: #2f2e29;
+
+        
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .container .leftside .info .name {
+        font-size: 50px;
+    }
+
+    .container .leftside .info .buttons a {
+        display: block;
+
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
